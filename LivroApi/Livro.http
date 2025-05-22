@@ -1,0 +1,68 @@
+﻿@baseUrl = http://localhost:5263
+
+### 🟢 GET - Listar todos os livros
+GET {{baseUrl}}/api/Livros
+Accept: application/json
+
+### 🔵 POST - Criar um novo livro
+POST {{baseUrl}}/api/Livros
+Content-Type: application/json
+
+{
+  "titulo": "Dom Casmurro",
+  "autor": "Machado de Assis",
+  "preco": 29.90,
+  "anoPublicacao": 1899
+}
+
+### 🟡 GET - Obter livro por ID
+GET {{baseUrl}}/api/Livros/1
+Accept: application/json
+
+### 🟠 PUT - Atualizar livro por ID
+PUT {{baseUrl}}/api/Livros/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "titulo": "Dom Casmurro (Edição Atualizada)",
+  "autor": "Machado de Assis",
+  "preco": 34.90,
+  "anoPublicacao": 2023
+}
+
+### 🔴 DELETE - Remover livro por ID
+DELETE {{baseUrl}}/api/Livros/1
+Accept: application/json
+
+
+### 🔵 POST - Criar um novo livro
+POST {{baseUrl}}/api/Livros
+Content-Type: application/json
+
+{
+  "titulo": "Dom Casmurro",
+  "autor": "Machado de Assis",
+  "preco": 29.90,
+  "anoPublicacao": 1899
+}
+
+### 🟡 GET - Obter livro por ID
+GET {{baseUrl}}/api/Livros/1
+Accept: application/json
+
+### 🟠 PUT - Atualizar livro por ID
+PUT {{baseUrl}}/api/Livros/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "titulo": "Dom Casmurro (Edição Atualizada)",
+  "autor": "Machado de Assis",
+  "preco": 34.90,
+  "anoPublicacao": 2023
+}
+
+### 🔴 DELETE - Remover livro por ID
+DELETE {{baseUrl}}/api/Livros/1
+Accept: application/json
